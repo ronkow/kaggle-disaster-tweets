@@ -1,0 +1,21 @@
+TRAIN DATASET FROM KAGGLE
+
+7613 rows
+
+7552 with keyword
+61 without keyword
+
+5079 with location
+the rest without location
+
+4342 negative class 57%
+the rest positive class
+
+
+PROCESSED DATASETS
+
+keywords added to 61 rows
+7597 rows
+
+
+
