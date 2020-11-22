@@ -60,7 +60,10 @@ def clean_doc_keyword(doc):
   
     tokens = doc.split()                                 # returns a list of tokens
     tokens = [w.lower() for w in tokens]                 # convert all characters to lower case  
-    tokens = [re.sub(r'\d+', '', w) for w in tokens]    # sub numbers with underscore
+    
+    tokens = [porter.stem(w) for w in tokens]             # stemming
+    
+    tokens = [re.sub(r'\d+', '', w) for w in tokens]     # sub numbers with underscore
     tokens = ['kw_'+ w for w in tokens]
     return tokens                                        # list of tokens
 
