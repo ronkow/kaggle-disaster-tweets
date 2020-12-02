@@ -3,5 +3,5 @@
 This is an ongoing project. Projected completion: 30.11.2020  
 https://www.kaggle.com/c/nlp-getting-started
 
-Baseline result (Logistic Regression model):  
+Best result (Gradient Tree Boosting model):  
 ![](image/leaderboard.png?raw=true)
