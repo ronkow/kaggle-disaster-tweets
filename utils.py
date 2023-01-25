@@ -8,8 +8,8 @@ def file_to_string(filepath):
     RETURN: string of text from file
     """
     with open(filepath) as f:
-        s = f.read()           # 
-    return s                   # string
+        s = f.read()          
+    return s                  
 
 
 def list_to_csv(list, filepath):
