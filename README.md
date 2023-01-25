@@ -3,5 +3,5 @@
 This project is from Kaggle:
 https://www.kaggle.com/c/nlp-getting-started
 
-Best result (Gradient Tree Boosting model):  
+Best result (XGBoost model):  
 ![](image/leaderboard.PNG?raw=true)
