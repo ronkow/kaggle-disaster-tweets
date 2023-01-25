@@ -12,7 +12,6 @@ def file_to_string(filepath):
     return s                   # string
 
 
-
 def list_to_csv(list, filepath):
     """
     ARGUMENT: list, file path
@@ -23,13 +22,8 @@ def list_to_csv(list, filepath):
     df = pd.DataFrame(list)
     df.to_csv(filepath, index=False)
 
-#df = pd.DataFrame({'col':L})
-
-
 
 def csv_to_list_of_lists(filepath):
-    """
-    """
     text_list = []
     with open(filepath) as f:
         for row in csv.reader(f):
@@ -38,8 +32,6 @@ def csv_to_list_of_lists(filepath):
 
 
 def csv_to_list_of_strings(filepath):
-    """
-    """
     text_list = []
     with open(filepath) as f:
         for row in csv.reader(f):
@@ -47,13 +39,14 @@ def csv_to_list_of_strings(filepath):
     return text_list[1:]
 
 
-
 def dataframe_to_csv(df, filepath):
     csvfile = df.to_csv(filepath, encoding='utf-8', index=False)
+    
     
 def csv_to_dataframe(filepath):
     df = pd.read_csv(filepath, header=0)
     return df    
+
 
 def np_array_to_dataframe(array):
     df = pd.DataFrame(data=array[1:], columns=array[0,0:])
