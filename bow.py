@@ -78,7 +78,6 @@ def list_of_token_lists_text(text_list, token_list):
     return text_token_list
 
 
-
 def list_of_token_lists_keyword(keyword_list):
     keyword_token_list = []
     
